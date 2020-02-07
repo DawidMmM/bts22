@@ -1,0 +1,17 @@
+.align-items-center {
+	align-items: center;
+}
+
+.justify-content-center {
+	justify-content: center;    
+}
+
+@media( min-width: 768px ) {
+	.d-sm-flex {
+		display: flex !important;
+	}
+
+	.justify-content-sm-end {
+		justify-content: flex-end;
+	}
+}

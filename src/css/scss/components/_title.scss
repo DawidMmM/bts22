@@ -1,0 +1,11 @@
+.title {
+	padding: 2.5rem;
+	color: $black;
+	font-weight: 300;
+}
+
+@media(min-width: 768px) {	
+	.title {
+		font-size: $text-xxl;
+	}
+}

@@ -1,0 +1,27 @@
+/*Bootstrap*/
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/carousel";
+
+/*Variables*/
+
+@import "scss/variables/*";
+
+/*Utils*/
+
+@import "scss/utils/*";
+
+/*Base*/
+
+@import "scss/base/*";
+
+/*Components*/
+
+@import "scss/components/*";
+
+/*Layout*/
+
+@import "scss/layout/*";

@@ -1,0 +1,19 @@
+.header {
+	padding: 1.4rem .5rem 0;
+	background-color: $white;
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;  
+
+	&__logo {
+		position: absolute;
+	}
+}
+
+@media (min-width: 576px) {
+	.header {
+		padding: 1.4rem 0 0;
+	}
+}

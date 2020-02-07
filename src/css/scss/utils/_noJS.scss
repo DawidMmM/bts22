@@ -1,0 +1,54 @@
+.no-js {	
+	body {
+		padding-top: 240px;
+	}		
+
+	.menu {
+    	flex-wrap: wrap;
+    	justify-content: flex-end;
+
+		&__link {
+			padding: .6rem;
+		}
+	}
+
+	.carousel {
+		height: 410px;
+		overflow: scroll;    	
+
+		&-item {
+			margin-bottom: 10px;
+			height: auto;
+			float: none;			
+		}	
+
+		.img {
+			height: 320px;			
+		}
+	}
+
+	.carousel-item, .menu {
+		display: flex;
+	}
+
+	.hamburger, .carousel-indicators, .carousel-control-prev, .carousel-control-next {
+		display: none;
+	}
+}
+
+@media( min-width: 578px ) {
+	.no-js {
+		body {
+			padding-top: 130px;
+		}
+	}
+}
+
+@media( max-width: 768px ) {
+	.no-js {
+		.menu {	
+			margin-top: 4rem;	
+			justify-content: center;
+		}
+	}
+}

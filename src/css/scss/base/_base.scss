@@ -1,0 +1,19 @@
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	padding-top: 80px;
+}
+
+ol, ul, dl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}

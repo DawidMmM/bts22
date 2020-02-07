@@ -1,0 +1,95 @@
+.b-img {
+	display: block;
+	background-image: url(../img/sprites.png);
+	background-repeat: no-repeat;
+
+	&_logo {
+		background-size: 320px 190px;
+		width: 200px;
+	    height: 30px;	   
+	} 
+
+	&_tesco {
+		background-position: -234px 0px;
+		width: 142px;
+		height: 41px;
+	}
+
+	&_axa {
+		background-position: -231px -42px;
+		width: 98px;
+		height: 44px;
+	}
+
+	&_bonduelle {
+		background-position: 0px -93px;
+		width: 158px;
+		height: 63px;
+	}
+
+	&_inovamed {
+		background-position: -192px -162px;
+		width: 155px;
+		height: 29px;
+	}
+
+	&_unliver {
+		background-position: -100px -155px;
+		width: 72px;
+		height: 80px;
+	}
+
+	&_fizjomed {
+		background-position: 1px -156px;
+		width: 99px;
+		height: 71px;
+	}
+
+	&_formsfield {
+		background-position: -302px -87px;
+		width: 68px;
+		height: 68px;
+	}	
+
+	&_kklogo {
+		background-position: -159px -94px;
+		width: 138px;
+		height: 54px;
+	}
+
+	&_htt {
+		background-position: 0px -39px;
+	    width: 73px;
+	    height: 49px;
+	}
+
+	&_centrum {
+		background-position: -76px -39px;
+	    height: 51px;
+	}
+
+	&_soundslike {
+		background-position: -193px -202px;
+	    height: 23px;
+	}
+
+	&_arrow {
+		background-position: -335px -45px;
+	    width: 40px;
+	    height: 40px;
+	}
+
+	&_centrum, &_soundslike {
+		width: 152px;
+	}
+}
+
+@media(min-width: 992px) {	
+	.b-img {
+		&_logo {	    
+			background-size: auto;
+			width: 233px;
+		    height: 37px;	
+		}
+	} 
+}

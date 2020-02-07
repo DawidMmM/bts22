@@ -1,0 +1,87 @@
+.card {
+	overflow: hidden;	  
+   
+    &__content {
+		padding: 1rem;
+		height: 100%;
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    transform: translateY(100%);
+	    transition: .7s;
+	}
+	
+	&__title {		
+		display: inline-block;		
+	}		
+
+	&__job-title {
+		margin-bottom: 0;
+		position: absolute;
+		bottom: 0.625rem;
+	}
+
+	&__email {
+		&:hover {
+			color: inherit;
+		}
+	}
+
+	&__img {
+		max-width: 100%;
+		min-height: 375px;
+		display: block;
+	}
+
+	&_theme-blue {			
+		border-bottom: 3px solid $light-blue;
+
+		.card__content {
+			background-color: $light-blue;
+		}
+
+		.card__title {
+			border-bottom: 1px solid $black;
+		}
+
+		&, .card__email {
+			color: $black;	
+		}
+	}
+
+	&_theme-gray {		
+		border-bottom: 3px solid $dark-gray;
+
+		.card__content {
+			background-color: $dark-gray;
+		}
+
+		.card__title {
+			border-bottom: 1px solid $white;
+		}		
+
+		&, .card__email {
+			color: $white;	
+		}
+	}
+
+	&:hover &__content, &:focus &__content {
+    	transform: translateY(0%);
+    }
+}
+
+@media(max-width: 600px) {
+	.card {
+		&__content {
+			transform: translateY(0%); 
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	.card {
+		&__text {
+			font-size: $text-xs;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.navigation {
+	padding-top: 0rem;
+	text-align: right;		
+}
+
+@media( min-width: 768px ) {
+	.navigation {
+		padding-top: .5rem;	
+	}
+}

@@ -1,0 +1,39 @@
+.text {
+	&-s {
+		font-size: $text-s;
+	}
+
+	&-m {
+		font-size: $text-m;
+	}
+
+	&-l {
+		font-size: $text-l;
+	}
+
+	&-xl {
+		font-size: $text-xl;
+	}		
+}
+
+.text {
+	&-center {
+		text-align: center;
+	}
+
+	&-uppercase {
+		text-transform: uppercase;
+	}
+
+	&-blue {
+		color: $blue;
+	}
+}
+
+@media(min-width: 768px) {
+	.text {
+		&-sm-s {
+			font-size: $text-s;
+		}
+	}
+}

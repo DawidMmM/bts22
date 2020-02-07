@@ -1,0 +1,43 @@
+.menu {
+    display: none;
+
+	&__link {
+		padding: .5rem .4rem;
+		color: $light-black;
+	    display: block;
+
+	    &::after {
+	    	content: '';
+	    	display: block;
+	    	height: 2px;
+	    	background-color: transparent;
+	    	transition: background-color .1s;
+	    }
+
+	    &:hover {
+			color: $black;
+
+			&::after {				
+		    	background-color: $black;
+		    }
+	    }	  
+	}
+
+	&_is-open {
+		display: block;
+	}	
+
+	&_collapsing {
+		height: 0;
+		overflow: hidden;
+		transition: height .4s;
+	}
+}
+
+@media( min-width: 768px ) {
+	.menu {
+        &_is-open {
+			display: flex;
+		}
+	}
+}
